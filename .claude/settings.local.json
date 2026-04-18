@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3)",
+      "Bash(python3 -c ' *)",
+      "Bash(cat)",
+      "Bash(python3 /tmp/fix_faq.py)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(python3 /tmp/fix_about.py)",
+      "Bash(python3 /tmp/fix_service.py)",
+      "Bash(python3 /tmp/fix_team.py)",
+      "Bash(python3 /tmp/fix_cert.py)",
+      "Bash(python3 /tmp/fix_contact.py)",
+      "Bash(python3 /tmp/create_services.py)",
+      "Bash(python create_services.py)"
+    ]
+  }
+}
