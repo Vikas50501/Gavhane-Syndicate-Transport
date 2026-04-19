@@ -11290,6 +11290,12 @@ border-radius:30px 0 0 30px;
   display: inline-block;
   padding: 0 20px;
   padding-left: 0;
+}
+
+/* Row spacing */
+.row.g-4.justify-content-center {
+  padding-bottom: 60px;
+}
   color: var(--heading-font-color);
 }
 
@@ -13493,4 +13499,263 @@ img {
     margin-left: auto;
     width: auto;
   }
+}
+
+
+/* ================================================================ */
+/* GAVHANE SYNDICATE TRANSPORT — COMPREHENSIVE MOBILE IMPROVEMENTS  */
+/* Covers: index, about, contact, team, certifications, services    */
+/* ================================================================ */
+
+
+/* ---- TABLET (≤992px) ------------------------------------------ */
+@media only screen and (max-width: 992px) {
+
+  /* Hero slider — reduce from 800px */
+  .mh-800 {
+    min-height: 580px;
+  }
+
+  /* Contact form padding (p-60 = 60px all sides — too heavy on tablet) */
+  .p-60 {
+    padding: 40px !important;
+  }
+
+  /* Footer h3 used for email/phone/address — prevent overflow */
+  footer .widget h3 {
+    font-size: 22px;
+    word-break: break-word;
+    line-height: 1.4em;
+  }
+
+  /* "10+" Years badge */
+  .fs-84 {
+    font-size: 64px !important;
+  }
+
+  /* About page: overlapping image reserves space via pe-5 pb-5 */
+  .pe-5.pb-5 {
+    padding-right: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* CTA section: button right-aligns on lg, should center on tablet */
+  .col-lg-3.text-lg-end {
+    text-align: center !important;
+    margin-top: 8px;
+  }
+
+}
+
+
+/* ---- MOBILE (≤767px) ------------------------------------------ */
+@media only screen and (max-width: 767px) {
+
+  /* ---- Hero Slider ---- */
+  .mh-800 {
+    min-height: 460px;
+  }
+
+  /* Swiper nav buttons — smaller touch target is fine */
+  .swiper-button-prev,
+  .swiper-button-next {
+    --swiper-navigation-size: 20px;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  /* ---- "10+" Years badge (fs-84 = 84px — far too big on phones) ---- */
+  .fs-84 {
+    font-size: 48px !important;
+  }
+
+  /* Badge absolute container: m-5 (3rem) causes clipping at screen edges */
+  .abs.bottom-0.end-0.m-5 {
+    margin: 1rem !important;
+  }
+
+  /* ---- About page: image with pe-5 pb-5 (reserves space for overlay) ---- */
+  .pe-5.pb-5 {
+    padding-right: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  /* ---- Features strip: p-5 (3rem) is too heavy per item ---- */
+  /* Targets the 4-col features strip and industries text block */
+  section.p-0.bg-dark.text-light .p-5 {
+    padding: 1.75rem !important;
+  }
+
+  #section-industries [class*="col-lg-6"] .p-5 {
+    padding: 2rem !important;
+  }
+
+  /* ---- Why Choose Us / Key Features icon+text pattern ---- */
+  /* .relative > .abs.icon + .ps-100 — ps-100 = 100px left padding  */
+  /* On 375px phone (container ~335px): 335-100 = 235px text area — OK */
+  /* Reduce only on very small to prevent crowding */
+  .ps-100 {
+    padding-left: 80px;
+  }
+
+  /* ---- Contact page form — 60px padding unusable on phone ---- */
+  .p-60 {
+    padding: 24px !important;
+  }
+
+  /* ---- Contact info icons (.abs + .ms-80px) — slight reduction ---- */
+  .ms-80px {
+    margin-left: 70px;
+  }
+
+  /* ---- Footer ---- */
+  /* h3 for email/phone/address (28px default → way too large in footer) */
+  footer .widget h3 {
+    font-size: 18px !important;
+    word-break: break-word;
+    line-height: 1.5em;
+  }
+
+  /* "Get in Touch" h2 */
+  footer h2 {
+    font-size: 28px !important;
+  }
+
+  /* Social icons — wrap gracefully */
+  footer .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  /* ---- Subheader / page banner ---- */
+  #subheader {
+    margin: 8px !important;
+    padding-top: 90px !important;
+    padding-bottom: 48px !important;
+  }
+
+  #subheader h1 {
+    font-size: 36px !important;
+  }
+
+  /* ---- CTA strip ("Ready to Move Your Cargo...") ---- */
+  .col-md-9 h3.fs-32 {
+    font-size: 22px !important;
+    text-align: center;
+  }
+
+  .col-lg-3.text-lg-end {
+    text-align: center !important;
+  }
+
+  /* ---- Service sidebar (col-lg-3 stacks above content) ---- */
+  /* Give it a bottom gap before the service content */
+  .col-lg-3 > .me-lg-3 {
+    margin-bottom: 4px;
+  }
+
+  /* ---- Contact page: testimonial image half ---- */
+  .half-fluid .image {
+    min-height: 260px;
+  }
+
+  /* Testimonial quote text */
+  .owl-single-dots .item h3.fs-32 {
+    font-size: 20px !important;
+    line-height: 1.4em;
+  }
+
+  /* ---- Stats counters ---- */
+  .de_count h3.fs-40 {
+    font-size: 30px;
+  }
+
+  /* ---- CTA section spacing ---- */
+  section.bg-color.pt-50.pb-50 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+
+  /* ---- Overflow guard ---- */
+  #wrapper {
+    overflow-x: hidden;
+  }
+
+}
+
+
+/* ---- SMALL PHONES (≤480px) ------------------------------------ */
+@media only screen and (max-width: 480px) {
+
+  /* Hero */
+  .mh-800 {
+    min-height: 400px;
+  }
+
+  /* Override existing 48px h1 at 767px — smaller on 320-480px phones */
+  h1 {
+    font-size: 32px !important;
+    line-height: 1.2em !important;
+  }
+
+  h2 {
+    font-size: 26px !important;
+  }
+
+  /* Keep subheader h1 consistent */
+  #subheader h1 {
+    font-size: 26px !important;
+  }
+
+  /* Badge */
+  .fs-84 {
+    font-size: 40px !important;
+  }
+
+  /* Icon + text pattern: tighten on very small screens */
+  .ps-100 {
+    padding-left: 68px;
+  }
+
+  /* Contact form */
+  .p-60 {
+    padding: 16px !important;
+  }
+
+  /* Contact info icon offset */
+  .ms-80px {
+    margin-left: 80px;
+  }
+
+  /* Footer */
+  footer .widget h3 {
+    font-size: 15px !important;
+  }
+
+  footer h2 {
+    font-size: 22px !important;
+  }
+
+  /* CTA */
+  .col-md-9 h3.fs-32 {
+    font-size: 18px !important;
+  }
+
+  /* Industries text side */
+  #section-industries [class*="col-lg-6"] .p-5 {
+    padding: 1.5rem !important;
+  }
+
+  /* Stats */
+  .de_count h3.fs-40 {
+    font-size: 26px;
+  }
+
+  /* Testimonial quote */
+  .owl-single-dots .item h3.fs-32 {
+    font-size: 17px !important;
+  }
+
 }

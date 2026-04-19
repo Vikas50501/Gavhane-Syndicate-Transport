@@ -1,0 +1,10 @@
+# Credentials — NEVER commit these
+mailer-config.php
+
+# Composer dependencies
+vendor/
+composer.lock
+
+# OS files
+.DS_Store
+Thumbs.db

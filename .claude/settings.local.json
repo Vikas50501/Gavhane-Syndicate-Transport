@@ -12,7 +12,8 @@
       "Bash(python3 /tmp/fix_cert.py)",
       "Bash(python3 /tmp/fix_contact.py)",
       "Bash(python3 /tmp/create_services.py)",
-      "Bash(python create_services.py)"
+      "Bash(python create_services.py)",
+      "Bash(code-review-graph update *)"
     ]
   }
 }
