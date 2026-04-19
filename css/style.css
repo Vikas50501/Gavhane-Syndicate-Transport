@@ -8556,7 +8556,7 @@ input[type="range"]::-moz-range-thumb {
     display: block;
     width: 15px;
     height: 15px;
-    background: orange;
+    background: #DF1411;
     border-radius: 50%;
     animation: dot-pulse 1500ms ease-out infinite;
 }
@@ -8571,7 +8571,7 @@ input[type="range"]::-moz-range-thumb {
     display: block;
     width: 15px;
     height: 15px;
-    background: orange;
+    background: #DF1411;
     border-radius: 50%;
     transition: all 200ms;
 }
