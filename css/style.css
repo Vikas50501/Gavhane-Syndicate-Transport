@@ -13759,3 +13759,10 @@ img {
   }
 
 }
+
+/* additional */
+
+img.logo-mobile{
+  width: 100px;
+  height: auto;
+}
