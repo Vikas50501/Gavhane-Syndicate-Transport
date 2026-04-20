@@ -138,8 +138,6 @@ NAV_WITH_DROPDOWN = '''<ul id="mainmenu">
                                     <li><a class="menu-item" href="index.html">Home</a></li>
                                     <li><a class="menu-item" href="about.html">About Us</a></li>
                                     <li><a class="menu-item" href="service-trucking.html">Services</a></li>
-                                    <li><a class="menu-item" href="team.html">Our Team</a></li>
-                                    <li><a class="menu-item" href="certifications.html">Certifications</a></li>
                                     <li><a class="menu-item" href="contact.html">Contact</a></li>
                                 </ul>'''
 
@@ -147,8 +145,6 @@ OLD_NAV = '''<ul id="mainmenu">
                                     <li><a class="menu-item" href="index.html">Home</a></li>
                                     <li><a class="menu-item" href="about.html">About Us</a></li>
                                     <li><a class="menu-item" href="service-trucking.html">Services</a></li>
-                                    <li><a class="menu-item" href="team.html">Our Team</a></li>
-                                    <li><a class="menu-item" href="certifications.html">Certifications</a></li>
                                     <li><a class="menu-item" href="contact.html">Contact</a></li>
                                 </ul>'''
 
@@ -401,8 +397,6 @@ def make_page(svc):
                                     <ul>
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="about.html">About Us</a></li>
-                                        <li><a href="team.html">Our Team</a></li>
-                                        <li><a href="certifications.html">Certifications</a></li>
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </div>
@@ -517,7 +511,7 @@ for svc in SERVICES:
     print(f"Created: {svc['file']}")
 
 # Update navigation and footer in existing 6 pages
-existing_pages = ["index.html", "about.html", "service-single.html", "team.html", "certifications.html", "contact.html"]
+existing_pages = ["index.html", "about.html", "service-single.html", "contact.html"]
 
 for page in existing_pages:
     path = os.path.join(BASE, page)
